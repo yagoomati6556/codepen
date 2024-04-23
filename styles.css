@@ -1,0 +1,38 @@
+body {
+      background-image: url("https://mediaslide-europe.storage.googleapis.com/metropolitan/pictures/7607/52520/large-1684775590-b613843a440c7564c39471d4373b147c.jpg");
+
+      background-size: cover;
+ background-color: black;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    } 
+     .post {
+            background-color: grey;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+  input[type="text"], input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+  body {
+    font-family: seri, sans-serif;
+}
+  .titulo {
+    text-align: center;
+}
+  a {
+    text-decoration: none;
+    color: #000000;
+ }
+  input[type="text"], input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+  .boton {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
