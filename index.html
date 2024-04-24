@@ -4,8 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Top moda</title>
-<link rel="stylesheet" href="styles.css"> <!-- Aquí vinculamos el archivo CSS -->
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script src
 </head>
+<body>
+<script>
+  var profesion ="encargado de la revista";
+  var nombre ="Yagomati";
+</script>
 <h1 class="titulo > TOP MODA </h1>
 <div class="post">
 <img src="https://radio.us.es/wp-content/uploads/2019/07/prog-top-moda.jpg" height="200" width="200">
@@ -34,35 +40,6 @@
   He leido y aceptado la política y términos de privacidad
   <input type="submit" id="btn" name="btn" value="Enviar">
 </form>
-<script>
-
-(function(){
-
-  var formulario = document.getElementsByName('formulario')[0],
-     elementos = formulario.elements,
-     boton = document.getElementById('btn');
-
-  var validarNombre = function(e){
-      if (formulario.nombre.value == 0) {
-        alert("Completa el campo nombre");
-        e.preventDefault();
-       }
-  };
-
-  var validarCheckbox = function(e){
-      if (formulario.terminos.checked == false) {
-        alert("Acepta los Terminos");
-        e.preventDefault();
-      }
-  };
-
-  var validar = function(e){
-    validarNombre(e);
-    validarCheckbox(e);
-  };
-formulario.addEventListener("submit", validar);
-}())
-</script>
   </div>
     <h3> Secciones </h3>
     <div class="post">
@@ -80,5 +57,6 @@ formulario.addEventListener("submit", validar);
    <div class="post">
       <a href="QR.html">Los códigos QR</a>
    </div>
+  </body>
   </html>
      
