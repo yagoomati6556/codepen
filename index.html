@@ -14,7 +14,7 @@
 <p> Somos un grupo de personas especializadas en el mundo de la moda y aqui encontraras las últimas novedades de la moda. Entre otras cosas también tenemos nuestra propia marca de ropa y estaríamos muy agardecidos si nos apoyas registrandote a la revista. </p> 
 </div>
 
-  <form><h4> Registro </h4>
+  <form action="" name="formulario" method="get"><h4> Registro </h4>
  <div class="post">
   <label> Nombre:</label>
   <input type="text" placeholder="escibe tu nombre" size="20" maxlenght="30" name="nombre" id="nombre">
@@ -30,10 +30,39 @@
    
     <br><br>
     
-  <input type="checkbox">
+  <input type="checkbox" name="terminos" id="terminos" >
   He leido y aceptado la política y términos de privacidad
-  <input type="submit">
-    
+  <input type="submit" id="btn" name="btn" value="Enviar">
+</form>
+<script>
+
+(function(){
+
+  var formulario = document.getElementsByName('formulario')[0],
+     elementos = formulario.elements,
+     boton = document.getElementById('btn');
+
+  var validarNombre = function(e){
+      if (formulario.nombre.value == 0) {
+        alert("Completa el campo nombre");
+        e.preventDefault();
+       }
+  };
+
+  var validarCheckbox = function(e){
+      if (formulario.terminos.checked == false) {
+        alert("Acepta los Terminos");
+        e.preventDefault();
+      }
+  };
+
+  var validar = function(e){
+    validarNombre(e);
+    validarCheckbox(e);
+  };
+formulario.addEventListener("submit", validar);
+}())
+</script>
   </div>
     <h3> Secciones </h3>
     <div class="post">
@@ -51,4 +80,5 @@
    <div class="post">
       <a href="QR.html">Los códigos QR</a>
    </div>
+  </html>
      
